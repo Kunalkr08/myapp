@@ -1,0 +1,94 @@
+/* Home.module.css */
+
+.home {
+  width: 400px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+}
+
+.home h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.home form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.home input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.home button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home button:hover {
+  background-color: #0056b3;
+}
+
+.home ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home .todo-item {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home .todo-item span {
+  display: inline-block;
+  padding: 15px;
+  flex: 1;
+}
+
+.home .todo-item button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.home .todo-item:hover button {
+  opacity: 1;
+}
