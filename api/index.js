@@ -10,7 +10,16 @@ require('dotenv').config();
 const salt = bcrypt.genSaltSync(10);
 const secret="myPassword";
 
-app.use(cors({credentials:true,origin:true}));
+app.use(cors({
+
+    origin: true,
+    methods: ["GET", "POST"],
+    credentials: true
+}));
+
+
+
+
 app.use(express.json());
 async function main() {
   
