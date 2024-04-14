@@ -70,5 +70,4 @@ app.listen(5000, (err)=>{
 
 
 
-// YRpEew5aTw0ky2zX
-// mongodb+srv://project1:YRpEew5aTw0ky2zX@cluster0.2htpck9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+module.exports = app;
