@@ -38,7 +38,7 @@ function Home() {
 
   return (
     <div className={styles.home}>
-      <h1>Beautiful Todo List</h1>
+      <h1>Todo List</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
