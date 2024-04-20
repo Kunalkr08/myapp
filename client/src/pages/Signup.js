@@ -8,7 +8,7 @@ export default function Signup() {
   const [redirect,setRedirect] = useState(false);
 
   const submitForm = async () => {
-    const Url = "https://myapp-six-azure.vercel.app/signup"; // Assuming your server listens on /api/signup
+    const Url = "http://localhost:5000/signup"; // Assuming your server listens on /api/signup
     try {
       const response = await fetch(Url, {
         method: "POST",
